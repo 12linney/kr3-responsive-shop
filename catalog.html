@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Каталог фотоуслуг студии «Удачный момент»: корпоративный портрет, репортажная и классическая съёмка.">
+    <title>Каталог услуг — «Удачный момент»</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Перейти к основному содержимому</a>
+    <header class="site-header">
+        <div class="site-header__inner container">
+            <a class="site-header__logo" href="index.html">Удачный момент</a>
+            <nav class="site-nav" aria-label="Основное меню">
+                <ul class="site-nav__list">
+                    <li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li>
+                    <li class="site-nav__item"><a class="site-nav__link site-nav__link--active" href="catalog.html" aria-current="page">Каталог</a></li>
+                    <li class="site-nav__item"><a class="site-nav__link" href="order.html">Заказ</a></li>
+                    <li class="site-nav__item"><a class="site-nav__link site-nav__link--accent" href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <div class="catalog container">
+            <h1 class="catalog__title">Каталог услуг</h1>
+
+            <aside class="filters" aria-labelledby="filters-title">
+                <h2 class="filters__title" id="filters-title">Категории</h2>
+                <div class="filters__option">
+                    <input type="checkbox" id="cat-business" name="category" value="business">
+                    <label for="cat-business">Для бизнеса</label>
+                </div>
+                <div class="filters__option">
+                    <input type="checkbox" id="cat-events" name="category" value="events">
+                    <label for="cat-events">Мероприятия</label>
+                </div>
+                <div class="filters__option">
+                    <input type="checkbox" id="cat-portrait" name="category" value="portrait">
+                    <label for="cat-portrait">Портреты</label>
+                </div>
+                <button class="button button--small filters__button" type="button">Применить</button>
+            </aside>
+
+            <section class="catalog__content" aria-label="Список услуг">
+                <div class="cards">
+            <article class="product-card">
+                <span class="product-card__badge product-card__badge--hit">Хит</span>
+                <picture>
+                    <source type="image/webp" srcset="images/portrait-corporate-480.webp 480w, images/portrait-corporate-800.webp 800w" sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 360px">
+                    <img class="product-card__image" src="images/portrait-corporate-800.jpg" srcset="images/portrait-corporate-480.jpg 480w, images/portrait-corporate-800.jpg 800w" sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 360px" alt="Деловой портрет сотрудника" width="800" height="1067" loading="lazy">
+                </picture>
+                <div class="product-card__body">
+                    <h3 class="product-card__title">Корпоративный портрет</h3>
+                    <p class="product-card__description">Выездная или студийная съёмка сотрудников для сайтов и резюме.</p>
+                    <div class="product-card__footer">
+                        <p class="product-card__price">от 3 500 руб.</p>
+                        <a class="button button--small" href="product.html">Подробнее</a>
+                    </div>
+                </div>
+            </article>
+            <article class="product-card">
+                <span class="product-card__badge product-card__badge--new">Новинка</span>
+                <picture>
+                    <source type="image/webp" srcset="images/reportage-480.webp 480w, images/reportage-800.webp 800w" sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 360px">
+                    <img class="product-card__image" src="images/reportage-800.jpg" srcset="images/reportage-480.jpg 480w, images/reportage-800.jpg 800w" sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 360px" alt="Фотограф снимает мероприятие" width="800" height="600" loading="lazy">
+                </picture>
+                <div class="product-card__body">
+                    <h3 class="product-card__title">Репортажная съёмка мероприятий</h3>
+                    <p class="product-card__description">Динамичная фиксация событий: фокус на живых эмоциях и ключевых моментах.</p>
+                    <div class="product-card__footer">
+                        <p class="product-card__price">от 6 000 руб.</p>
+                        <a class="button button--small" href="product.html">Подробнее</a>
+                    </div>
+                </div>
+            </article>
+            <article class="product-card">
+                <picture>
+                    <source type="image/webp" srcset="images/classic-480.webp 480w, images/classic-800.webp 800w" sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 360px">
+                    <img class="product-card__image" src="images/classic-800.jpg" srcset="images/classic-480.jpg 480w, images/classic-800.jpg 800w" sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 360px" alt="Портретная фотосессия в студии" width="800" height="1067" loading="lazy">
+                </picture>
+                <div class="product-card__body">
+                    <h3 class="product-card__title">Классическая фотосъёмка</h3>
+                    <p class="product-card__description">Сессия в студии или на улице, ориентированная на стиль и характер человека.</p>
+                    <div class="product-card__footer">
+                        <p class="product-card__price">от 4 000 руб.</p>
+                        <a class="button button--small" href="product.html">Подробнее</a>
+                    </div>
+                </div>
+            </article>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="site-footer" id="contacts">
+        <div class="site-footer__inner container">
+            <div>
+                <p class="site-footer__brand">Удачный момент</p>
+                <p class="site-footer__text">© 2026 Lucky moment</p>
+            </div>
+            <nav aria-label="Ссылки на главную">
+                <ul>
+                    <li class="site-footer__item"><a class="site-footer__link" href="index.html#adv">Преимущества</a></li>
+                    <li class="site-footer__item"><a class="site-footer__link" href="index.html#popular">Популярные услуги</a></li>
+                    <li class="site-footer__item"><a class="site-footer__link" href="contacts.html">Контактная информация</a></li>
+                </ul>
+            </nav>
+            <address class="site-footer__address">
+                <p class="site-footer__item">г. Москва, ул. Надёжная, д. 62</p>
+                <p class="site-footer__item"><a class="site-footer__link" href="tel:+70000000000">+7 (800) 555-35-35</a></p>
+            </address>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,154 @@
+body {
+    overflow-wrap: break-word;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+h1 {
+    font-size: 26px;
+}
+
+.site-header {
+    position: static;
+}
+
+.site-nav__list {
+    gap: 4px 20px;
+}
+
+.site-nav__link {
+    padding: 8px 0;
+}
+
+.site-nav__link--accent {
+    padding: 10px 17px;
+}
+
+.hero {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.hero__title {
+    font-size: 26px;
+}
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+}
+
+/*на телефоне одна колонка */
+.cards {
+    grid-template-columns: minmax(0, 1fr);
+}
+
+.filters {
+    flex: 1 1 100%;
+    position: static;
+}
+
+.filters__option input {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+.order-form__input {
+    min-height: 44px;
+    font-size: 16px;
+}
+
+.order-form__checkbox {
+    width: 24px;
+    height: 24px;
+}
+
+.order-form__actions .button {
+    width: 100%;
+}
+
+.modal {
+    align-items: center;
+}
+
+.modal__window {
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+@media (min-width: 768px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    .site-header {
+        position: sticky;
+    }
+
+    .hero {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .hero__title {
+        font-size: 30px;
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .order-form {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        max-width: 800px;
+    }
+
+    .order-form__field:nth-last-child(-n+3),
+    .order-form__actions {
+        grid-column: 1 / -1;
+    }
+
+    .order-form__actions .button {
+        width: auto;
+    }
+}
+
+@media (min-width: 1024px) {
+    h1 {
+        font-size: 36px;
+    }
+
+    .hero__title {
+        font-size: 40px;
+    }
+
+    .cards {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .filters {
+        flex: 0 0 220px;
+        position: sticky;
+    }
+
+    .catalog .cards {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 1200px) {
+    .catalog .cards {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}

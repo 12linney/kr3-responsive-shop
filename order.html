@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Оформите заявку на фотосъёмку в студии «Удачный момент»: выберите услугу и оставьте контакты.">
+    <title>Заявка на съёмку — «Удачный момент»</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Перейти к основному содержимому</a>
+    <header class="site-header">
+        <div class="site-header__inner container">
+            <a class="site-header__logo" href="index.html">Удачный момент</a>
+            <nav class="site-nav" aria-label="Основное меню">
+                <ul class="site-nav__list">
+                    <li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li>
+                    <li class="site-nav__item"><a class="site-nav__link" href="catalog.html">Каталог</a></li>
+                    <li class="site-nav__item"><a class="site-nav__link site-nav__link--active" href="order.html" aria-current="page">Заказ</a></li>
+                    <li class="site-nav__item"><a class="site-nav__link site-nav__link--accent" href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <section class="page-section container">
+            <h1 class="page-section__title">Заявка на съёмку</h1>
+            <form class="order-form" action="#" method="get">
+                <div class="order-form__field">
+                    <label class="order-form__label" for="order-name">Имя <span class="order-form__required">*</span></label>
+                    <input class="order-form__input" type="text" id="order-name" name="name" required>
+                </div>
+                <div class="order-form__field">
+                    <label class="order-form__label" for="order-email">E-mail <span class="order-form__required">*</span></label>
+                    <input class="order-form__input" type="email" id="order-email" name="email" required>
+                </div>
+                <div class="order-form__field">
+                    <label class="order-form__label" for="order-phone">Телефон <span class="order-form__required">*</span></label>
+                    <input class="order-form__input" type="tel" id="order-phone" name="phone" required>
+                </div>
+                <div class="order-form__field">
+                    <label class="order-form__label" for="order-service">Услуга <span class="order-form__required">*</span></label>
+                    <select class="order-form__input" id="order-service" name="service" required>
+                        <option value="">Выберите услугу</option>
+                        <option value="corporate">Корпоративный портрет</option>
+                        <option value="reportage">Репортажная съёмка мероприятий</option>
+                        <option value="classic">Классическая фотосъёмка</option>
+                    </select>
+                </div>
+                <div class="order-form__field">
+                    <label class="order-form__label" for="order-comment">Комментарий</label>
+                    <textarea class="order-form__input" id="order-comment" name="comment" rows="4"></textarea>
+                </div>
+                <div class="order-form__field order-form__field--checkbox">
+                    <input class="order-form__checkbox" type="checkbox" id="order-agree" name="agree" required>
+                    <label class="order-form__label" for="order-agree">Согласен на обработку персональных данных <span class="order-form__required">*</span></label>
+                </div>
+                <div class="order-form__actions">
+                    <button class="button" type="submit">Отправить заявку</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer" id="contacts">
+        <div class="site-footer__inner container">
+            <div>
+                <p class="site-footer__brand">Удачный момент</p>
+                <p class="site-footer__text">© 2026 Lucky moment</p>
+            </div>
+            <nav aria-label="Ссылки на главную">
+                <ul>
+                    <li class="site-footer__item"><a class="site-footer__link" href="index.html#adv">Преимущества</a></li>
+                    <li class="site-footer__item"><a class="site-footer__link" href="index.html#popular">Популярные услуги</a></li>
+                    <li class="site-footer__item"><a class="site-footer__link" href="contacts.html">Контактная информация</a></li>
+                </ul>
+            </nav>
+            <address class="site-footer__address">
+                <p class="site-footer__item">г. Москва, ул. Надёжная, д. 62</p>
+                <p class="site-footer__item"><a class="site-footer__link" href="tel:+70000000000">+7 (800) 555-35-35</a></p>
+            </address>
+        </div>
+    </footer>
+</body>
+
+</html>

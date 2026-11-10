@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Корпоративный портрет в фото-студии «Удачный момент»: описание услуги, цена и характеристики.">
+    <title>Корпоративный портрет — «Удачный момент»</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Перейти к основному содержимому</a>
+    <header class="site-header">
+        <div class="site-header__inner container">
+            <a class="site-header__logo" href="index.html">Удачный момент</a>
+            <nav class="site-nav" aria-label="Основное меню">
+                <ul class="site-nav__list">
+                    <li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li>
+                    <li class="site-nav__item"><a class="site-nav__link" href="catalog.html">Каталог</a></li>
+                    <li class="site-nav__item"><a class="site-nav__link" href="order.html">Заказ</a></li>
+                    <li class="site-nav__item"><a class="site-nav__link site-nav__link--accent" href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <section class="page-section container">
+            <div class="product">
+                <picture>
+                    <source type="image/webp" srcset="images/portrait-corporate-480.webp 480w, images/portrait-corporate-800.webp 800w" sizes="(max-width: 767px) 100vw, (max-width: 1099px) 50vw, 510px">
+                    <img class="product__image" src="images/portrait-corporate-800.jpg" srcset="images/portrait-corporate-480.jpg 480w, images/portrait-corporate-800.jpg 800w" sizes="(max-width: 767px) 100vw, (max-width: 1099px) 50vw, 510px" alt="Деловой портрет сотрудника" width="800" height="1067">
+                </picture>
+                <div class="product__info">
+                    <h1>Корпоративный портрет</h1>
+                    <p class="product__description">Выездная или студийная съёмка сотрудников для сайта компании, резюме и профилей в соцсетях. Подберём фон и свет, подскажем, как вести себя в кадре.</p>
+                    <p class="product__price">от 3 500 руб.</p>
+                    <div class="product__actions">
+                        <a class="button" href="order.html">Оставить заявку</a>
+                        <a class="button button--outline" href="#terms-modal">Условия съёмки</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="page-section container">
+            <div class="table-wrapper">
+                <table class="specs-table">
+                    <caption class="specs-table__caption">Характеристики услуги</caption>
+                    <thead>
+                        <tr>
+                            <th class="specs-table__th" scope="col">Параметр</th>
+                            <th class="specs-table__th" scope="col">Значение</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th class="specs-table__th specs-table__th--row" scope="row">Длительность съёмки</th>
+                            <td class="specs-table__td">1 час</td>
+                        </tr>
+                        <tr>
+                            <th class="specs-table__th specs-table__th--row" scope="row">Обработанных кадров</th>
+                            <td class="specs-table__td">15</td>
+                        </tr>
+                        <tr>
+                            <th class="specs-table__th specs-table__th--row" scope="row">Место съёмки</th>
+                            <td class="specs-table__td">Студия или офис заказчика</td>
+                        </tr>
+                        <tr>
+                            <th class="specs-table__th specs-table__th--row" scope="row">Срок готовности</th>
+                            <td class="specs-table__td">2 дня</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <div class="modal" id="terms-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title"> <!-- КР3: aria-modal -->
+        <div class="modal__window">
+            <h2 id="modal-title">Условия съёмки</h2>
+            <ul class="modal__list">
+                <li>Съёмка проходит по предварительной записи</li>
+                <li>Перенести встречу можно не позднее чем за сутки</li>
+                <li>Готовые фото высылаем на электронную почту</li>
+            </ul>
+            <a class="button button--small" href="#close">Закрыть</a>
+        </div>
+    </div>
+
+    <footer class="site-footer" id="contacts">
+        <div class="site-footer__inner container">
+            <div>
+                <p class="site-footer__brand">Удачный момент</p>
+                <p class="site-footer__text">© 2026 Lucky moment</p>
+            </div>
+            <nav aria-label="Ссылки на главную">
+                <ul>
+                    <li class="site-footer__item"><a class="site-footer__link" href="index.html#adv">Преимущества</a></li>
+                    <li class="site-footer__item"><a class="site-footer__link" href="index.html#popular">Популярные услуги</a></li>
+                    <li class="site-footer__item"><a class="site-footer__link" href="contacts.html">Контактная информация</a></li>
+                </ul>
+            </nav>
+            <address class="site-footer__address">
+                <p class="site-footer__item">г. Москва, ул. Надёжная, д. 62</p>
+                <p class="site-footer__item"><a class="site-footer__link" href="tel:+70000000000">+7 (800) 555-35-35</a></p>
+            </address>
+        </div>
+    </footer>
+</body>
+
+</html>
